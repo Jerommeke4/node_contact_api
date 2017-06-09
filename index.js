@@ -1,10 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const config = require('./config.json');
 const app = express();
 
 // contact mongo db
-mongoose.connect('mongodb://mongo/contacts');
+mongoose.connect('mongodb://'+config.mongo.host+'/contacts');
 
 // setup application
 app.use(bodyParser.json());
