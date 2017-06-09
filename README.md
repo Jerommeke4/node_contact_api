@@ -1,4 +1,4 @@
-#Contacts service API
+# Contacts service API
 
 This is an API written in nodeJS using MongoDB as backend NoSQL database. It is capable of 
 storing contact information using a simple REST API. 
@@ -10,6 +10,7 @@ Installation
 * When installing seperately install a nodejs compatible server, deploy the code there and run the following commands:
     * `npm install`
     * `npm start`
+    * Update the config.json file to use your own mongoDB host
     * and again go to `http://docker_host:3000/contact`
 
 Data
